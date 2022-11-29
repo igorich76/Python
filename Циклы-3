@@ -2,8 +2,9 @@
 
 a = float(input())
 n = int(input())
+c = 1
 
 if n > 0:
     for i in range(n):
-        a = a*n
-print(a)
+        c = c * a
+print(c)
