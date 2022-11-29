@@ -8,3 +8,14 @@ if n > 0:
     for i in range(n):
         c = c * a
         print(c)
+
+////////pabc
+##
+var a:=ReadlnReal;
+var n:=ReadlnInteger;
+var rez:=1.0;
+for var i:=1 to n do
+begin
+  rez:=rez*a;
+  Print(rez);
+end;
