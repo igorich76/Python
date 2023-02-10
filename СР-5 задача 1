@@ -4,3 +4,10 @@ for i in range(len(a)):
     if a[i] > maxi:
         maxi = a[i]
 print(maxi)
+///////////////
+alist = [100,99,45,98,2]
+maxi = alist[0]
+for i in range(len(alist)):
+    if alist[i] > maxi:
+        maxi = alist[i]
+print(maxi)
