@@ -1,0 +1,5 @@
+alist = ['t','o','k','i','k','a']
+print(alist)
+print(len(alist))
+alist[0],alist[5] = alist[5],alist[0]
+print(alist)
