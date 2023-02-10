@@ -1,0 +1,6 @@
+alist = [-100,99,450,98,2]
+maxi = abs(alist[0])
+for i in range(len(alist)):
+    if abs(alist[i] > maxi):
+        maxi = abs(alist[i])
+print(maxi)
