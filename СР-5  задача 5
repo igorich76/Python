@@ -17,3 +17,27 @@ else:
     str2 = stroka[part1:part2 * 2]
 
     print(str2, str1, sep='')
+/////// моё решение на 100% сам сделал!!!!!!!!!!!
+stroka = input()
+dlina = len(stroka)
+
+print('Строка:',stroka)
+print('Её длина:',dlina)
+
+if dlina % 2 == 0:
+    part1 = (len(stroka) // 2)
+    nach_str = stroka[0:part1]
+    part2 = part1 - len(stroka)
+    kon_str = stroka[part1:len(stroka)]
+else:
+    part1 = (len(stroka) // 2) + 1
+    nach_str = stroka[0:part1]
+    part2 = part1 - len(stroka)
+    kon_str = stroka[part1:len(stroka)]
+
+print('Начало строки:',nach_str)
+print('Конец строки:',kon_str)
+
+nach_str, kon_str = kon_str, nach_str
+new_stroka = nach_str + kon_str
+print(new_stroka)
