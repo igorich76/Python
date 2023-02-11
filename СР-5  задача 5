@@ -1,0 +1,19 @@
+//решение Гоши Ахметова
+stroka = input()
+dlina = len(stroka)
+
+if dlina % 2 == 0:
+    part = dlina // 2
+
+    str1 = stroka[0:part]
+    str2 = stroka[part:part*2]
+
+    print(str2, str1, sep='')
+else:
+    part1 = (dlina // 2) + 1
+    part2 = part1
+
+    str1 = stroka[0:part1]
+    str2 = stroka[part1:part2 * 2]
+
+    print(str2, str1, sep='')
