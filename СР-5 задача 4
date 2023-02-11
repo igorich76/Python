@@ -1,8 +1,19 @@
+alist = [input() for i in [0, 1, 2, 3, 4]]
 print(alist)
 sr = 0
 cnt = 0
 for i in range(len(alist)):
     if alist[i] > 0:
         sr += alist[i]
+        cnt += 1
+print(sr / cnt)
+//////////
+alist = [input() for i in [0, 1, 2, 3, 4]]
+print(alist)
+sr = 0
+cnt = 0
+for i in range(len(alist)):
+    if int(alist[i]) > 0:
+        sr += int(alist[i])
         cnt += 1
 print(sr / cnt)
