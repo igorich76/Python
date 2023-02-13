@@ -1,0 +1,20 @@
+// сам сделал с несколькими подсказками!
+stroka = input()
+
+print('Строка:',stroka)
+print('Её длина:',len(stroka))
+cnt = 0
+poz = 0
+alist = []
+
+for i in stroka:
+    poz += 1
+    if i == 'f':
+        cnt += 1
+        alist.append(poz-1)
+        if cnt == 1:
+            print('Первый индекс', poz-1)
+if len(alist) > 1:
+    print('Последний индекс', alist[-1])
+if cnt == 0:
+    print('Такой буквы нет!')
