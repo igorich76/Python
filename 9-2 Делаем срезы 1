@@ -1,0 +1,9 @@
+## //Делаем срезы 1
+var s := ReadString;
+s.Count.Println;
+Println(s*3);
+Println(s[:2]);
+Println(s[:4]);
+Println(s[s.Length-2:]);
+Println(s[::-1]);
+Println(s[2:s.Length-0]);
