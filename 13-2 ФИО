@@ -1,0 +1,14 @@
+Напишите функцию print_fio(name, surname, patronymic), которая принимает три параметра:
+name – имя человека;
+surname – фамилия человека;
+patronymic – отчество человека;
+а затем выводит на печать ФИО человека.
+Примечание. Предусмотрите тот факт, что все три буквы в ФИО должны иметь верхний регистр.
+//////////////////////////////////////
+## //ФИО
+function print_fio(name, surname, patronymic: string): string;
+begin
+  Write(name.ToUpper[:2],surname.ToUpper[:2],patronymic.ToUpper[:2]);
+end;
+var (name, surname, patronymic) := (ReadString, ReadString, ReadString);
+print_fio(name, surname, patronymic);
