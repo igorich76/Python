@@ -1,0 +1,7 @@
+// решение не найдено!!!
+## // 9-1 Одинаковые соседи
+var (s, cnt) := (ReadString, 0);
+for var i:=1 to s.Length do
+  for var j:=1 to s.Length do
+  if (s[i] = s[j]) then cnt += 1;
+Println(Trunc(cnt/4));
