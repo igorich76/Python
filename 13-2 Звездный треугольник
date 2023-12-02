@@ -1,0 +1,17 @@
+Напишите функцию draw_triangle(fill, base), которая принимает два параметра:
+fill – символ заполнитель;
+base – величина основания равнобедренного треугольника;
+а затем выводит его.
+Примечание. Гарантируется, что основание треугольника – нечетное число.
+///////////////////////////////////////////
+## //Звездный треугольник
+function draw_triangle(fill: string; base: integer): string;
+begin
+  for var i:=1 to base do
+    Println(fill*i);
+  for var i:=base-1 downto 1 do
+    Println(fill*i)
+end;
+var fill := ReadString('Введите символ-заполнитель');
+var base := ReadInteger('Введите основание');
+draw_triangle(fill,base);
