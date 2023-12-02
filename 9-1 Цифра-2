@@ -1,0 +1,8 @@
+## // 9-1 Цифра-2
+var s := ReadString;
+var cnt := 0;
+for var i:=1 to s.Length do
+  if (s[i] in '0123456789') then cnt += 1;
+if cnt > 0 then Print('Цифра')
+  else Print('Цифр нет');
+// супер решение! Ничем не хуже решения на питоне!
