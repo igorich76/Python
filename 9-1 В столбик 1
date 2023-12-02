@@ -1,0 +1,4 @@
+## // 9-1 В столбик 1
+var s := ReadlnString;
+for var i:=1 to s.Length step 2 do
+println(s[i]);
