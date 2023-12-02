@@ -1,0 +1,3 @@
+## // 9-1 ФИО
+var (a,b,c) := ReadString3;
+Write(b[1], a[1], c[1]);
