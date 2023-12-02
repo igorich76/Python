@@ -1,0 +1,4 @@
+## // 9-1 Цифра-1
+var (s, a, sum) := (ReadString, 0, 0);
+for var i:=1  to s.Length do sum += StrToInt(s[i]);  
+Print(sum);
