@@ -1,0 +1,10 @@
+## // 9-1 Сколько раз?
+var s := ReadString;
+var (cnt1, cnt2) := (0, 0);
+for var i:=1 to s.Length do
+  begin
+    if (s[i] = '+') then cnt1 += 1;
+    if (s[i] = '*') then cnt2 += 1;
+  end;
+Println('Символ + встречается',cnt1,'раз');
+Println('Символ * встречается',cnt2,'раз');
