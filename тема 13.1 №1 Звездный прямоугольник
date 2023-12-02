@@ -1,0 +1,10 @@
+## //на паскале сделал
+procedure line;
+begin
+  for var i := 1 to 12 do
+    Println('*        *');
+end;
+Println('*'*10);
+line;
+Print;
+Println('*'*10);
