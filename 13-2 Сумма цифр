@@ -1,0 +1,16 @@
+Напишите функцию print_digit_sum(), которая принимает одно целое число num и выводит на печать сумму его цифр.
+///////////////////////////////////////////////
+## //Сумма цифр
+function print_digit_sum(a: integer):integer;
+begin
+var sum := 0;
+var b := a.ToString;//перевод в строку
+a := StrToInt(b);//обратно в число
+for var i:=1 to b.Length do
+  begin
+    sum += a mod 10;
+    a := a div 10; //укорачиваю число на 1 цифру
+  end;
+Print(sum);
+end;
+print_digit_sum(ReadInteger); //вызов функции
