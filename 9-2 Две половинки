@@ -1,0 +1,8 @@
+## //задача Две половинки
+var s := 'abcdef';
+var j := Round(s.Count.Println div 2);
+Println(j);
+{if (j mod 2 = 0) then Print(s[j:] + s[:j])
+  else Print(s[j+1:] + s[:j+1]);}
+Print(j mod 2 = 0? s[j:] + s[:j]: s[j+1:] + s[:j+1])
+// тернарное выражение попробовал....
