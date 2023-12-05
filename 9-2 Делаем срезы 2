@@ -1,0 +1,11 @@
+## //задача Делаем срезы 2 Уррра, сделал!
+var s := 'abcdefghijklmnopqrstuvwxyz';
+//s.Count.Println; //26
+Println('1)',s[3:4]);
+Println('2)',s[s.Length-1:s.Length]);
+Println('3)',s[:6]);
+Println('4)',s[:s.Length-1]);
+Println('5)',s[2::2]);// вывести чётные индексы
+Println('6)',s[1::2]); // нечетные индексы
+Println('7)',s[::-1]);
+Println('8)',s[::-2]);
