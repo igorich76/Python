@@ -1,0 +1,13 @@
+from turtle import *
+t = Turtle()
+##################
+a = int(input())
+t.width(10)
+t.speed(1)
+t.fd(a)
+t.lt(120)
+t.fd(a)
+t.lt(120)
+t.fd(a)
+t.lt(120)
+t.hideturtle()
