@@ -1,0 +1,16 @@
+//Наибольшие числа. Алгоритм  подсмотрел
+##
+var n := ReadlnInteger();
+var (maxi1,maxi2) := (0,1);
+for var i:=1 to n do
+  begin
+    var num := ReadInteger;
+    if num > maxi1 then
+      begin
+        maxi2 := maxi1;
+        maxi1 := num;
+      end
+      else if num > maxi2 then maxi2 := num;
+  end;
+Println(maxi1); 
+Print(maxi2); 
