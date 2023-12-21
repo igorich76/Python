@@ -1,0 +1,6 @@
+##
+var cnt := 0;
+var n := ReadlnInteger('введите число:');
+for var i:=1 to n do
+  if n mod i = 0 then cnt += i;
+Print(cnt);
