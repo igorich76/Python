@@ -1,0 +1,17 @@
+# наконец-то сделал движение объекта
+# и получилась остановка объекта
+from graph import *
+
+windowSize(1000,600)
+canvasSize(1000,600)
+x = 50; y = 50;
+penColor("blue")
+brushColor('yellow')
+obj = rectangle(x,y,100,100)
+def dvig():
+    moveObjectBy(obj,5,0)
+    if xCoord(obj) == 900:
+        killTimer()
+onTimer(dvig,50)
+
+run()
