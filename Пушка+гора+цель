@@ -1,0 +1,33 @@
+from graph import *
+# 11-03-2024
+#---------настройки окна------
+windowSize(1000,600)
+canvasSize(1000,600)
+#-------------земля------------
+penColor("black")
+brushColor("YellowGreen")
+rectangle(0,400,999,600)
+# ------------колесо пушки-----
+brushColor("White")
+circle(50,380,20)
+penColor(0,0,255)
+brushColor(0,0,255)
+circle(50,380,5)
+#--------------ствол пушки------
+penSize(5)
+line(5,400,70,330)
+penSize(1)
+#--------------цель (коробка)---
+penColor("black")
+brushColor(255,0,0)
+rectangle(850,370,980,400)
+#--------------гора-------------
+penColor("black")
+brushColor("Yellow")
+polygon([(200,400),(450,250),(700,400),(200,400)])
+#-------------снаряд-----------
+penColor("black")
+brushColor(0,0,0)
+circle(75,325,10)
+#--------------запуск окна-----
+run()
