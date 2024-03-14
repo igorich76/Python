@@ -1,0 +1,31 @@
+№------ не сделал! Надо учиться!-------
+from tkinter import *
+from graph import *
+#-------------------
+windowSize(600,700)
+canvasSize(600,700)
+#-------------------
+penColor("black")
+brushColor("YellowGreen")
+rectangle(0,550,599,695)
+#-------------------
+brushColor("brown")
+rectangle(0,100,100,550)
+#-------------------
+brushColor("chartreuse4")
+circle(100,90,10)
+#-------------------
+v, t, h, s = 20, 0.0, 0.0, 0.0
+x,y,dx,dy = 100,90,1,1
+#-------------------
+while True:
+    t += 0.05;
+    s = v * t;
+    h = 4 * (100 - 9.81 * (t * t) / 2);
+    x += dx + s
+    y += 400 + dy - h
+    circle(x,y,10)
+#-------------------
+#-------------------
+#-------------------
+run()
