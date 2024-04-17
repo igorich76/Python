@@ -1,0 +1,8 @@
+##
+var s := ReadString;
+if (s[:] = s[::-1]) then print('YES') else print('NO')
+
+/////////////// с логической операцией //////////////
+##
+var s := ReadString;
+Print(s[:] = s[::-1]? 'YES':'NO')
